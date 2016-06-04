@@ -74,7 +74,7 @@ If the resulting `gcc-arm-none-eabi` version produces build errors for PX4/Firmw
 <div class="host-code"></div>
 
 ```sh
-sudo apt-get install android-tools-adb android-tools-fastboot fakechroot fakeroot unzip xz-utils wget -y
+sudo apt-get install android-tools-adb android-tools-fastboot fakechroot fakeroot unzip xz-utils wget python python-empy -y
 ```
 
 <div class="host-code"></div>
