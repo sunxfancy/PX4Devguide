@@ -134,6 +134,15 @@ Copy/move the file to the cross_toolchain/download directory
 
 ```
 cd cross_toolchain
+```
+
+Remove the outdated extracted files if available:
+```
+rm -rf downloads/Flight_qrlSDK
+```
+
+Copy new zip into downloads folder and run the install script:
+```
 cp ~/Downloads/Flight_qrlSDK.zip downloads
 ./qrlinux_sysroot.sh --clean
 ```
@@ -141,14 +150,8 @@ cp ~/Downloads/Flight_qrlSDK.zip downloads
 Append the following to your ~/.bashrc:
 
 ```
-export HEXAGON_ARM_SYSROOT=${HOME}/Qualcomm/Hexagon_SDK/2.0/sysroot
+export HEXAGON_ARM_SYSROOT=${HOME}/Qualcomm/qrlinux_v1.0_sysroot
 ```
-
-<aside class="todo">
-This should change to
-`export HEXAGON_ARM_SYSROOT=${HOME}/Qualcomm/qrlinux_v1.0_sysroot`
-soon, once the updated Flight_qrlSDK.zip has been released by Intrinsyc.
-</aside>
 
 Load the new configuration:
 
