@@ -134,15 +134,6 @@ Copy/move the file to the cross_toolchain/download directory
 
 ```
 cd cross_toolchain
-```
-
-Remove the outdated extracted files if available:
-```
-rm -rf downloads/Flight_qrlSDK
-```
-
-Copy new zip into downloads folder and run the install script:
-```
 cp ~/Downloads/Flight_qrlSDK.zip downloads
 ./qrlinux_sysroot.sh --clean
 ```
@@ -160,6 +151,16 @@ Load the new configuration:
 ```sh
 source ~/.bashrc
 ```
+
+
+If `qrlinux_sysroot.sh` complains about an existing wrong path:
+
+```
+Invalid install path for HEXAGON_ARM_SYSROOT
+```
+
+You need to remove the old path from `.bashrc`, open a new bash, and try again.
+
 
 For more sysroot options see [Sysroot Installation](https://github.com/ATLFlight/cross_toolchain/blob/sdk3/README.md#sysroot-installation)
 
