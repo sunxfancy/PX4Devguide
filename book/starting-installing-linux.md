@@ -141,8 +141,14 @@ cp ~/Downloads/Flight_qrlSDK.zip downloads
 Append the following to your ~/.bashrc:
 
 ```
-export HEXAGON_ARM_SYSROOT=${HOME}/Qualcomm/qrlinux_v1.0_sysroot
+export HEXAGON_ARM_SYSROOT=${HOME}/Qualcomm/Hexagon_SDK/2.0/sysroot
 ```
+
+<aside class="todo">
+This should change to
+`export HEXAGON_ARM_SYSROOT=${HOME}/Qualcomm/qrlinux_v1.0_sysroot`
+soon, once the updated Flight_qrlSDK.zip has been released by Intrinsyc.
+</aside>
 
 Load the new configuration:
 
